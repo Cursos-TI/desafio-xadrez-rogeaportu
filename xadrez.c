@@ -34,5 +34,10 @@ int main() {
     int Bispo = 5; // Número de casas a mover
     int Rainha = 8; // Número de casas a mover
 
+    // A Torre se move horizontalmente ou verticalmente.
+    // Uso do for para o movimento da torre 5 casas para direita
+    printf("______ Movimento da Torre______\n");
+    printf("\n");
+
     return 0;
 }
