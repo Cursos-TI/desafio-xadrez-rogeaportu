@@ -61,8 +61,12 @@ int main() {
     // Uso do Do While para o movimento da Rainha 8 casas para esquerda
     printf("______Movimento da Rainha______\n");
     printf("\n");
-
-
+    
+   do{
+        printf("Esquerda\n"); // Imprime a direção da rainha
+        contadorRainha++; // contador
+    }while (contadorRainha < Rainha); // executa enquanto o contador for menor que as casas
+    printf("\n");  
 
     return 0;
 }
