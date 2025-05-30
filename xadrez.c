@@ -33,6 +33,7 @@ int main() {
     int Torre = 5; // Número de casas a mover
     int Bispo = 5; // Número de casas a mover
     int Rainha = 8; // Número de casas a mover
+    int contadorBispo = 0; // Contador para controlar as iterações do 'while'
 
     // A Torre se move horizontalmente ou verticalmente.
     // Uso do for para o movimento da torre 5 casas para direita
@@ -54,6 +55,9 @@ int main() {
         contadorBispo++; 
     }
     printf("\n"); 
+
+   
+
 
 
 
