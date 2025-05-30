@@ -39,5 +39,12 @@ int main() {
     printf("______ Movimento da Torre______\n");
     printf("\n");
 
+    // declaração do for e saida de dados
+    for (int i = 0; i < Torre; i++) {
+        printf("Direita\n"); // imprime a direção da torre
+    }
+    printf("\n"); 
+
+    
     return 0;
 }
