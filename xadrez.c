@@ -49,6 +49,13 @@ int main() {
     printf("______Movimento do Bispo______\n");
     printf("\n");
 
+    while (contadorBispo < Bispo) {
+        printf("Cima, Direita\n"); // Imprime a direcao do bispo
+        contadorBispo++; 
+    }
+    printf("\n"); 
+
+
 
     return 0;
 }
