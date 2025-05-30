@@ -44,7 +44,11 @@ int main() {
         printf("Direita\n"); // imprime a direção da torre
     }
     printf("\n"); 
+    // O Bispo se move na diagonal.
+    // uso do while para o movimento do bispo 5 casas diagonal, para cima e a direita
+    printf("______Movimento do Bispo______\n");
+    printf("\n");
 
-    
+
     return 0;
 }
