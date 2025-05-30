@@ -28,5 +28,11 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+    // declaração de variaveis
+
+    int Torre = 5; // Número de casas a mover
+    int Bispo = 5; // Número de casas a mover
+    int Rainha = 8; // Número de casas a mover
+
     return 0;
 }
