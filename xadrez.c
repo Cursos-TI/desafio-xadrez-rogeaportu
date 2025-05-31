@@ -33,6 +33,9 @@ int main() {
     int Torre = 5; // Número de casas a mover
     int Bispo = 5; // Número de casas a mover
     int Rainha = 8; // Número de casas a mover
+    int CavaloBaixo = 2;
+    int cavaloLado = 1;
+    int contadorCavalo = 0; // Contador para controlar as interações do while
     int contadorBispo = 0; // Contador para controlar as iterações do 'while'
     int contadorRainha = 0; // Contador para controlar as iterações do 'do-while'
 
