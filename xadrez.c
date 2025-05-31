@@ -72,7 +72,7 @@ int main() {
     printf("\n");  
 
     // O Cavalo se move horizontalmente ou verticalmente e de forma perpendicular formando um L
-    // Uso do while e for para o movimento do cavalo 2 casas para baixo e uma para direita
+    // Uso do while e for para o movimento do cavalo 2 casas para baixo e uma para esquerda
     printf("______ Movimento do Cavalo______\n");
     printf("\n");
 
