@@ -71,5 +71,22 @@ int main() {
     }while (contadorRainha < Rainha); // executa enquanto o contador for menor que as casas
     printf("\n");  
 
+    // O Cavalo se move horizontalmente ou verticalmente e de forma perpendicular formando um L
+    // Uso do while e for para o movimento do cavalo 2 casas para baixo e uma para direita
+    printf("______ Movimento do Cavalo______\n");
+    printf("\n");
+
+
+    while(contadorCavalo < CavaloBaixo){
+        printf("Baixo\n"); // imprime a direção do cavalo
+        for(int i = 0; i < cavaloLado && contadorCavalo == CavaloBaixo -1; i++){
+            printf("Esquerda\n"); // imprime a direção do cavalo
+        }
+
+        contadorCavalo++;
+    }
+    printf("\n");
+
+
     return 0;
 }
