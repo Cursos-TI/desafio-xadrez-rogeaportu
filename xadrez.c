@@ -25,6 +25,21 @@ void moverRainha(int movimentos) {
     moverRainha(movimentos - 1);
 }
 
+// Função para o movimento do Bispo recursivo e aninhados
+// O loop externo controla o movimento vertical, e o interno o horizontal.
+void moverBispo(int movimentos) {
+    
+    // Cada iteração do loop externo representa um "passo" diagonal.
+    for (int i = 0; i < movimentos; i++) {
+        // Loop interno para o movimento horizontal (simulando 'Direita').
+        // Para um movimento puramente diagonal, o loop interno executa apenas uma vez
+        // por cada passo vertical, garantindo a diagonal.
+        for (int j = 0; j < 1; j++) {
+            printf("Cima, Direita\n"); // Imprime a direção diagonal
+        }
+    }
+}
+
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
