@@ -89,10 +89,7 @@ int main() {
     printf("______Movimento da Rainha______\n");
     printf("\n");
     
-   do{
-        printf("Esquerda\n"); // Imprime a direção da rainha
-        contadorRainha++; // contador
-    }while (contadorRainha < Rainha); // executa enquanto o contador for menor que as casas
+    moverRainha(Rainha);
     printf("\n");  
 
     // O Cavalo se move horizontalmente ou verticalmente e de forma perpendicular formando um L
