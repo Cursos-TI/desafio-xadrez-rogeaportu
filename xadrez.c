@@ -73,7 +73,7 @@ int main() {
     int Torre = 5; // Número de casas a mover
     int Bispo = 5; // Número de casas a mover
     int Rainha = 8; // Número de casas a mover
-    int CavaloBaixo = 2;
+    int CavaloDirecao = 2;
     int cavaloLado = 1;
     int contadorCavalo = 0; // Contador para controlar as interações do while
     int contadorBispo = 0; // Contador para controlar as iterações do 'while'
@@ -105,19 +105,25 @@ int main() {
     printf("\n");  
 
     // O Cavalo se move horizontalmente ou verticalmente e de forma perpendicular formando um L
-    // Uso do while e for para o movimento do cavalo 2 casas para baixo e uma para esquerda
+    // Uso do loop aninhado e for para o movimento do cavalo 2 casas para cima e uma para direita
     printf("______ Movimento do Cavalo______\n");
     printf("\n");
 
-
-    while(contadorCavalo < CavaloBaixo){
-        printf("Baixo\n"); // imprime a direção do cavalo
-        for(int i = 0; i < cavaloLado && contadorCavalo == CavaloBaixo -1; i++){
-            printf("Esquerda\n"); // imprime a direção do cavalo
+    // Usamos 'CavaloBaixo' para definir o número de casas "para cima" neste movimento em L.
+    for (int i = 0; i < CavaloDirecao; i++) {
+        printf("Cima\n"); // Imprime o movimento para cima.
+        // Se este é o último movimento para cima, o Cavalo então se move para o lado.
+        if (i == CavaloDirecao - 1) {
+            // Loop interno para o movimento horizontal do Cavalo (uma casa para a direita).
+            // Usamos 'cavaloLado' para definir o número de casas "para o lado".
+            for (int j = 0; j < cavaloLado; j++) {
+                printf("Direita\n"); // Imprime o movimento para a direita.
+            }
         }
-
-        contadorCavalo++;
     }
+
+
+
     printf("\n");
 
 
