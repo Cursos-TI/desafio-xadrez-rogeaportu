@@ -1,7 +1,17 @@
 #include <stdio.h>
 
 // adição das funções recursivas
-
+// Função recursiva para o movimento da Torre
+void moverTorre(int movimentos) {
+    
+    if (movimentos <= 0) {
+        return;
+    }
+    // Imprime a direção do movimento atual.
+    printf("Direita\n");
+    // Chama a função recursivamente para o próximo movimento.
+    moverTorre(movimentos - 1);
+}
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
