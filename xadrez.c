@@ -57,11 +57,10 @@ int main() {
     printf("______ Movimento da Torre______\n");
     printf("\n");
 
-    // declaração do for e saida de dados
-    for (int i = 0; i < Torre; i++) {
-        printf("Direita\n"); // imprime a direção da torre
-    }
+    // Chamando da função recursiva para a Torre, usando sua variável 'Torre'.
+    moverTorre(Torre);
     printf("\n"); 
+    
     // O Bispo se move na diagonal.
     // uso do while para o movimento do bispo 5 casas diagonal, para cima e a direita
     printf("______Movimento do Bispo______\n");
