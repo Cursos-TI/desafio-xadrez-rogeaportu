@@ -93,10 +93,7 @@ int main() {
     printf("______Movimento do Bispo______\n");
     printf("\n");
 
-    while (contadorBispo < Bispo) {
-        printf("Cima, Direita\n"); // Imprime a direcao do bispo
-        contadorBispo++; 
-    }
+    moverBispo(Bispo);
     printf("\n"); 
 
     // A Rainha se move em todas as direções.
