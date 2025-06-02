@@ -75,9 +75,7 @@ int main() {
     int Rainha = 8; // Número de casas a mover
     int CavaloDirecao = 2;
     int cavaloLado = 1;
-    int contadorCavalo = 0; // Contador para controlar as interações do while
-    int contadorBispo = 0; // Contador para controlar as iterações do 'while'
-    int contadorRainha = 0; // Contador para controlar as iterações do 'do-while'
+    
 
     // A Torre se move horizontalmente ou verticalmente.
     // Uso do for para o movimento da torre 5 casas para direita
