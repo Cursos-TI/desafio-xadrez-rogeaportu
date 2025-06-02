@@ -13,6 +13,18 @@ void moverTorre(int movimentos) {
     moverTorre(movimentos - 1);
 }
 
+// Função recursiva para o movimento da Rainha
+void moverRainha(int movimentos) {
+    // Caso base da recursão: quando não há mais movimentos a fazer.
+    if (movimentos <= 0) {
+        return;
+    }
+    // Imprime a direção do movimento atual.
+    printf("Esquerda\n");
+    // Chama a função recursivamente para o próximo movimento.
+    moverRainha(movimentos - 1);
+}
+
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
@@ -60,7 +72,7 @@ int main() {
     // Chamando da função recursiva para a Torre, usando sua variável 'Torre'.
     moverTorre(Torre);
     printf("\n"); 
-    
+
     // O Bispo se move na diagonal.
     // uso do while para o movimento do bispo 5 casas diagonal, para cima e a direita
     printf("______Movimento do Bispo______\n");
